@@ -1,0 +1,143 @@
+@import './varbile.less';
+@import './reset.css';
+
+body {
+    font-size: 12px;
+}
+
+.text-underline:hover {
+    text-decoration: underline;
+}
+
+a {
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.float () {
+  .fl {
+      float: left;
+  }
+  .fr {
+      float: right;
+  }
+  &:after {
+      .block();
+      clear: both;
+      content: '';
+  }
+}
+.float();
+
+.font-size (@size, @sizebing: @size * 2) when (@size <  19) {
+    // 12 14 16 18 20
+    .font-@{sizebing} {
+        font-size: @size * 2px
+    }
+    .font-size(@size + 1)
+}
+.font-size(6);
+
+.bg-main {
+   // 1)样式的值使用
+   background:@bgMain;
+   color: @white;
+}
+
+.bordered(@color: red) {
+   border: 1px solid @color;
+   background: green;
+}
+
+.box-shadow (@x, @y, @hei, @wid, @color) {
+   // box-shadow: @x @y @hei @wid @color;
+   box-shadow: @arguments;
+}
+
+.color (@color) {
+   color: @color;
+}
+
+.bordered (@color,@color1) {
+   display: inline-block;
+   border: 10px solid @color;
+   border-top-color: @color1;
+}
+
+.trangle {
+ .bordered(transparent,white)
+}
+
+.border-red {
+   .bordered(red) !important;
+}
+
+.bordered {
+   border: 3px dashed darkgoldenrod;
+}
+
+// 5 10 15 20 25 30 35 margin padding 1-7
+.space(1);
+.space (@sp, @clsp: @sp * 5) when (@sp < 8) {
+ .margin-@{clsp} {
+     margin: @sp * 5px;
+ }
+ .margin-@{clsp}-top {
+   margin-top: @sp * 5px;
+ }
+ .margin-@{clsp}-left {
+   margin-left: @sp * 5px;
+ }
+ .margin-@{clsp}-right {
+   margin-right: @sp * 5px;
+ }
+ .margin-@{clsp}-bottom {
+   margin-bottom: @sp * 5px;
+ }
+ .padding-@{clsp} {
+     padding: @sp * 5px;
+ }
+ .padding-@{clsp}-top {
+   padding-top: @sp * 5px;
+ }
+ .padding-@{clsp}-left {
+   padding-left: @sp * 5px;
+ }
+ .padding-@{clsp}-right {
+   padding-right: @sp * 5px;
+ }
+ .padding-@{clsp}-bottom {
+   padding-bottom: @sp * 5px;
+ }
+ .space(@sp + 1)
+}
+
+// 函数的定义 函数使用要在使用的地方引入
+.size (@width: auto, @height: auto) {
+    width: @width*1px;
+    height: @height*1px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.el-hover (@background: inherit, @color: inherit) {
+  background: @background;
+  color: @color;
+}
+
+.line-height (@height: 20px) {
+    line-height: @height;
+}
+
+.text-align (@align: center) {
+    text-align: @align;
+}
