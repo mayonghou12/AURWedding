@@ -24,22 +24,6 @@
                     </div>
                 </div>
             </div>
-            <div class="hm-content-img">
-                <div class="hm-content-d" >
-                    <div class="hm-content-dd">
-                        <a class="hm-img1">
-                            <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/182313GvItK.jpg@772w_507h_1e_1c.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="hm-content-d2" >
-                    <div class="hm-content-dd2">
-                        <a class="hm-img2">
-                            <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/182245NJ66t.jpg@772w_507h_1e_1c.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </template>

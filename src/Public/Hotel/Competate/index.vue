@@ -16,19 +16,27 @@
                 <!-- 左部分内容 -->
                 <div class="ht-content-left">
                     <div class="ht-content-title">10</div>
-                    <div class="ht-content-img">
-                        <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a>
-                        <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a>
-                        <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a>
-                        <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a>
-                        <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a>
-                    </div>
+                    <ul class="ht-content-img">
+                       <li> <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a></li>
+                       <li> <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a></li>
+                       <li> <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a></li>
+                       <li> <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a></li>
+                       <li> <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a></li>
+                       <li> <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a></li>
+                    </ul>
                     <div class="ht-content-skip">
                         <div class="content-skip">
-                            下一篇：
-                            <a class="skip">21</a>
+                            <span>下一篇：<a class="skip">21</a></span>
                         </div>
                     </div>
+                    <!-- <div>
+                        <div>
+                            <div>
+                            <span>下一篇:</span>
+                            <a href="">21</a>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
                 <!-- 右部分内容 -->
                 <div class="ht-content-right">
@@ -87,27 +95,36 @@ a:hover{
     line-height: 50px;
 }
 .ht-content-left{
-    display: inline-block;
-    width: 65%;
+    float: left;
+    width: 70%;
     padding: 2%;
     background-image: linear-gradient(#e66465, #9198e5);
 }
 .ht-content-img img{
-    float: left;
     width: 200px;
-    display: block;
     margin: 30px;
     transition: all 1s;
+}
+.ht-content-img li{
+    float: left;
 }
 .ht-content-img img:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
 .ht-content-skip{
+    width: 773px;
     height: 40px;
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 30px;
+}
+.content-skip{
+    float: left;
+}
+.skip{
+    display: inline-block;
+    /* float: left; */
 }
 .ht-content-right{
     width: 28%;
@@ -124,7 +141,7 @@ a:hover{
     font-size: 18px;
     text-align: center;
     background: #e99985;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .ht-right-text:hover{
    background: #9198e5;
