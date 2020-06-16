@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <Indexe></Indexe>
+    <!-- <router-view></router-view> -->
+    <Wedding></Wedding>
+    <!-- <SubpageOne></SubpageOne> -->
+    <!-- <SubpageTwo></SubpageTwo> -->
   </div>
 </template>
 
 <script>
-import Indexe from '@/views/brand/index.vue'
+import Wedding from '@/views/wedding/index.vue'
+// import SubpageOne from '@/views/jewelry/subpageOne.vue'
+// import SubpageTwo from '@/views/jewelry/subpageTwo.vue'
 export default {
   components: {
-    Indexe
-  },
-  data () {
-    return {
-      a: 1,
-      style: {
-        background: 'red'
-      }
-    }
+    Wedding
+    // SubpageOne,
+    // SubpageTwo
   }
 
 }

@@ -3,7 +3,8 @@ const { resolve } = require('path')
 module.exports = {
   lintOnSave: 'warning',
   chainWebpack: (config) => {
-    config.resolve.alias.set('css', resolve(__dirname, 'src/assets/css'))
+    config.resolve.alias.set('@', resolve(__dirname, 'src'))
+      .set('css', resolve(__dirname, 'src/assets/css'))
       .set('views', resolve(__dirname, 'src/views'))
   },
   devServer: {

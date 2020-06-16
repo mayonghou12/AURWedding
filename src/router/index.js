@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Brand from '@/views/brand'
+import Jewelry from '@/views/jewelry'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    component: Brand
+    path: '/jewelry',
+    component: Jewelry
   }
 ]
 

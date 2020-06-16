@@ -1,6 +1,13 @@
-@import './varbile.less';
 @import './reset.css';
-
+/* 
+    1.定义变量
+    1)可以作为样式的值使用
+    2)也可以作为样式的类名使用
+    3)可以进行计算 单位保持为最前面的单位 如果没有单位 就一最前面的单位为单位
+    4)变量的使用范围
+      变量是延时执行的，从当前层级找变量部分上下结构，写到下面的优先级最高
+    5)变量私有化 用函数将变量包起来 防止被覆盖
+*/
 body {
     font-size: 12px;
 }
@@ -8,7 +15,9 @@ body {
 .text-underline:hover {
     text-decoration: underline;
 }
-
+.hidden {
+  overflow: hidden;
+}
 a {
     cursor: pointer;
 }
@@ -20,7 +29,10 @@ a {
 .inline {
     display: inline;
 }
-
+.inline-block {
+  display: inline-block;
+}
+// 浮动 清除浮动
 .float () {
   .fl {
       float: left;
@@ -36,56 +48,84 @@ a {
 }
 .float();
 
-.font-size (@size, @sizebing: @size * 2) when (@size <  19) {
-    // 12 14 16 18 20
-    .font-@{sizebing} {
-        font-size: @size * 2px
-    }
-    .font-size(@size + 1)
-}
-.font-size(6);
-
-.bg-main {
-   // 1)样式的值使用
-   background:@bgMain;
-   color: @white;
-}
-
-.bordered(@color: red) {
-   border: 1px solid @color;
-   background: green;
-}
-
+// 设置阴影
 .box-shadow (@x, @y, @hei, @wid, @color) {
    // box-shadow: @x @y @hei @wid @color;
    box-shadow: @arguments;
 }
 
+// 宽
+.width (@width) {
+  width: @width*1px;
+}
+// 高
+.height (@height) {
+  height: @height*1px;
+}
+// 颜色
 .color (@color) {
    color: @color;
 }
 
-.bordered (@color,@color1) {
-   display: inline-block;
-   border: 10px solid @color;
-   border-top-color: @color1;
+// 边框
+.border (@num, @string, @color) {
+  border: (@num * 1px) @string @color;
+}
+.border-top (@num, @string, @color) {
+  border-top: (@num * 1px) @string @color;
+}
+.border-right (@num, @string, @color) {
+  border-right: (@num * 1px) @string @color;
+}
+.border-bottom (@num, @string, @color) {
+  border-bottom: (@num * 1px) @string @color;
+}
+.border-left (@num, @string, @color) {
+  border-left: (@num * 1px) @string @color;
 }
 
-.trangle {
- .bordered(transparent,white)
+// .trangle {
+//  .bordered(transparent,white)
+// }
+
+// .border-red {
+//    .bordered(red) !important;
+// }
+
+//背景色
+.background (@color) {
+  background: @color;
 }
 
-.border-red {
-   .bordered(red) !important;
+// 函数的定义 函数使用要在使用的地方引入
+// 盒子大小
+.size (@width: auto, @height: auto) {
+  width: @width*1px;
+  height: @height*1px;
 }
 
-.bordered {
-   border: 3px dashed darkgoldenrod;
+.el-hover (@background: inherit, @color: inherit) {
+  background: @background;
+  color: @color;
 }
 
+// 行高
+.line-height (@height: 20px) {
+  line-height: @height*1px;
+}
+
+// 对齐方式
+.text-align (@align: center) {
+  text-align: @align;
+}
+.font (@size) {
+  // 12 14 16 18 20 22 24 26 28 30 32 34 36
+  font-size: @size * 2px;
+}
+// 边距
 // 5 10 15 20 25 30 35 margin padding 1-7
 .space(1);
-.space (@sp, @clsp: @sp * 5) when (@sp < 8) {
+.space (@sp, @clsp: @sp * 5) when (@sp < 21) {
  .margin-@{clsp} {
      margin: @sp * 5px;
  }
@@ -119,25 +159,15 @@ a {
  .space(@sp + 1)
 }
 
-// 函数的定义 函数使用要在使用的地方引入
-.size (@width: auto, @height: auto) {
-    width: @width*1px;
-    height: @height*1px;
+// 字体大小
+.font-size (@size, @sizebing: @size * 2) when (@size <  19) {
+  // 12 14 16 18 20 22 24 26 28 30 32 34 36
+  .font-@{sizebing} {
+      font-size: @size * 2px
+  }
+  .font-size(@size + 1)
 }
-
-.inline-block {
-    display: inline-block;
-}
-
-.el-hover (@background: inherit, @color: inherit) {
-  background: @background;
-  color: @color;
-}
-
-.line-height (@height: 20px) {
-    line-height: @height;
-}
-
-.text-align (@align: center) {
-    text-align: @align;
+// .font-size(6);
+.w-960 {
+  width: 960px;
 }
