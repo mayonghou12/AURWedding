@@ -1,50 +1,4 @@
-<template>
-    <div>
-        <div class="ht-c">
-            <!-- 头部内容 -->
-            <div class="ht-c-title">
-                <h3>
-                    <a href="">
-                        合作酒店
-                    </a>
-                    <em></em>
-                </h3>
-            </div>
-            <!-- 头部内容结束 -->
-            <!-- 内容 -->
-            <div class="ht-c-content">
-                <!-- 左部分内容 -->
-                <div class="ht-content-left">
-                    <div class="ht-content-title">10</div>
-                    <ul class="ht-content-img">
-                       <li> <a ><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt=""></a></li>
-                    </ul>
-                    <div class="ht-content-skip">
-                        <div class="content-skip">
-                            <span>下一篇：<a class="skip">21</a></span>
-                        </div>
-                    </div>
-                    <!-- <div>
-                        <div>
-                            <div>
-                            <span>下一篇:</span>
-                            <a href="">21</a>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- 右部分内容 -->
-                <div class="ht-content-right">
-                    <div class=" ht-right-img"></div>
-                    <a href=""><span class="ht-right-text">咨询婚礼顾问</span></a>
-                </div>
-                <!-- 内容结束 -->
-            </div>
-        </div>
-    </div>
-</template>
-<style>
-/* a{
+a{
     text-decoration: none;
 }
 a:hover{
@@ -120,7 +74,7 @@ a:hover{
 .skip{
     display: inline-block;
     /* float: left; */
-/*}
+}
 .ht-content-right{
     width: 28%;
     float: right;
@@ -140,7 +94,52 @@ a:hover{
 }
 .ht-right-text:hover{
    background: #9198e5;
-} */
-</style>
-<style src='../../Common/CSS/hotel.css'>
-</style>
+}
+
+.content{
+    width: 1188px;
+    margin: 0 auto;
+    }
+  .hotel-title{
+      background: url(http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/hetel.png) no-repeat center left;
+      height: 75px;
+      margin-bottom: 20px;
+  }
+  .hotel-title p{
+      border-bottom: 2px solid #c6c6c6;
+      padding-top: 45px;
+  }
+  .hotel-body{
+      padding: 50px 100px;
+      border: 2px solid #a1906a;
+  }
+  .hotel-body h3{
+      font-size: 33px;
+      color: #666;
+      font-weight: 400;
+  }
+  .hotel-pub{
+      overflow: hidden;
+      display: inline-block;
+      clear: both;
+  }
+  .hotel-pub li{
+      float: left;
+      width: 28%;
+      margin-right: 5%;
+      margin-bottom: 2%;
+      list-style: none;
+  }
+  .hotel-pub li a{
+      max-width: 60%;
+      max-height: 60%;
+  }
+  .hotel-pub li a img{
+      transition: all 1s;
+      width: 80%;
+      height: auto
+  }
+  .hotel-pub li a img:hover{
+      transform: scale(1.08);
+      cursor: pointer;
+  }
