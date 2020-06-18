@@ -12,11 +12,15 @@
                     <img src="../../assets/img/110858RmMR1.jpg" />
                     <p class="prev">
                         上一篇：
-                        <a href="SubpageOne.vue">结婚三件套 01</a>
+                        <router-link to="/subpageOne">
+                            结婚三件套 01
+                        </router-link>
                     </p>
                     <p class="next">
                         下一篇：
-                        <a href="SubpageThree.vue">结婚三件套 03</a>
+                        <router-link to="/subpageThree">
+                            结婚三件套 03
+                        </router-link>
                     </p>
                 </div>
                 <div class="right fr">

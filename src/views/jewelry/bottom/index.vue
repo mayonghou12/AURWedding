@@ -2,7 +2,7 @@
     <div>
         <ul class="w-960">
             <li class="fl">
-                <router-link to="subpageOne.vue">
+                <router-link to="/subpageOne">
                     <img src="../../../assets/img/110858RmMR1.jpg" />
                     <div class="zhezhao">
                         <div class="cont">
@@ -15,26 +15,30 @@
                 </router-link>
             </li>
             <li class="fl">
-                <img src="../../../assets/img/110823FZ4w3.jpg" />
-                <div class="zhezhao">
-                    <div class="cont">
-                        <div class="biankuang">
-                            <img class="logo" src="../../../assets/img/logo.png" />
-                            <span class="text">结婚三件套 02</span>
+                <router-link to="/subpageTwo">
+                    <img src="../../../assets/img/110823FZ4w3.jpg" />
+                    <div class="zhezhao">
+                        <div class="cont">
+                            <div class="biankuang">
+                                <img class="logo" src="../../../assets/img/logo.png" />
+                                <span class="text">结婚三件套 02</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </router-link>
             </li>
             <li class="fl">
-                <img src="../../../assets/img/110748smfzb.jpg" />
-                <div class="zhezhao">
-                    <div class="cont">
-                        <div class="biankuang">
-                            <img class="logo" src="../../../assets/img/logo.png" />
-                            <span class="text">结婚三件套 03</span>
+                <router-link to="/subpageThree">
+                    <img src="../../../assets/img/110748smfzb.jpg" />
+                    <div class="zhezhao">
+                        <div class="cont">
+                            <div class="biankuang">
+                                <img class="logo" src="../../../assets/img/logo.png" />
+                                <span class="text">结婚三件套 03</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </router-link>
             </li>
         </ul>
     </div>

@@ -12,7 +12,9 @@
                     <img src="../../assets/img/110858RmMR1.jpg" />
                     <p class="next">
                         上一篇：
-                        <a href="#">结婚三件套 02</a>
+                        <router-link to="/subpageTwo">
+                            结婚三件套 02
+                        </router-link>
                     </p>
                 </div>
                 <div class="right fr">
