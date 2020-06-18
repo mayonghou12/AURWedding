@@ -10,7 +10,7 @@
                     <span>VIDEOS</span>
                 </a>
             </li>
-            <li class="fr">
+            <li class="fr active">
                 <a href="#">
                     婚礼图片
                     <span>PHOTOS</span>
@@ -19,6 +19,14 @@
         </ul>
     </div>
 </template>
+
+<script>
+export default {
+  mothods: {
+
+  }
+}
+</script>
 
 <style lang="less" scoped>
 @import '~css/common.less';
@@ -39,7 +47,7 @@ li {
         color: black;
     }
 }
-li:hover {
+li.active {
     background: #d4caaf;
 }
 </style>

@@ -80,7 +80,6 @@ ul {
             left: 25px;
             bottom: 0px;
             display: none;
-            // animation: mymove .5s forwards;
         }
     }
     &:hover .zhezhao {
@@ -124,14 +123,7 @@ ul {
         bottom:92px;
     }
 }
-@keyframes mymove {
-    from {
-        bottom:92px;
-    }
-    to {
-        bottom:0px;
-    }
-}
+
 </style>
 
 <script>
