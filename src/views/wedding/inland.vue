@@ -1,18 +1,18 @@
 <template>
     <div>
-        <div class="content">
-            <Head></Head>
+        <div class="w-960">
+            <!-- <Head></Head> -->
             <Bottom></Bottom>
         </div>
     </div>
 </template>
 
 <script>
-import Head from 'views/jewelry/head'
-import Bottom from 'views/jewelry/bottom'
+// import Head from 'views/wedding/inland/head'
+import Bottom from 'views/wedding/inland/bottom'
 export default {
   components: {
-    Head,
+    // Head,
     Bottom
   }
 }
@@ -20,8 +20,7 @@ export default {
 
 <style lang="less" scoped>
 @import '~css/common.less';
-.content {
-    width: 960px;
-    margin: 35px auto;
+.w-960 {
+    margin: 0 auto;
 }
 </style>

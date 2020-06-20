@@ -61,7 +61,7 @@
     margin: 0 auto; */
     font-family:"微软雅黑,宋体";
     /* font-weight:bold; */
-    width: 1349px;
+    width: 100%;
     height: 237.63px;
     background: #abaaaa;
     color: #000;
@@ -96,7 +96,7 @@
      font-family:"微软雅黑,宋体";
     background: #2e2d2d;
     padding: 15px 175px;
-    width: 1349px;
+    width: 100%;
     height: 44px;
     font-size: 12px;
     color: #999999;
@@ -113,5 +113,7 @@
     text-decoration: none;
     font-family:"微软雅黑,宋体";
     font-weight:bold;
+    text-align: left;
+    display: block;
   }
 </style>

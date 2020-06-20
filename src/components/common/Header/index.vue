@@ -5,84 +5,141 @@
       <div class="design-logo">
         <img src="../../../assets/img/logo.png"/>
       </div>
-      <div class="design-h clearfix">
+      <div class="design-h">
         <img class="design-h1" src="../../../assets/img/h1.png">
         <img class="design-h2" src="../../../assets/img/h2.png"/>
       </div>
     </div>
     <div class="header-lists clearfix">
       <ul class="header-ul clearfix">
-        <li class="header-li">
-          <a class="header-list">
-            <p class="">HOME</p>
-            <span class="">首页</span>
-          </a>
+        <li v-for="(item, index) in list" :key="index" class="header-li">
+          <router-link :to="item.to" class="header-list">
+            <p>{{item.text}}</p>
+            <span>{{item.title}}</span>
+          </router-link>
         </li>
-        <li class="header-li">
-           <a class="header-list">
+        <!-- <li class="header-li">
+           <router-link to="" class="header-list">
               <p>BRAND</p>
               <span>品牌</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-          <a class="header-list">
+          <router-link to="/photo" class="header-list">
             <p>PHOTO</p>
             <span>旅拍</span>
-          </a>
+          </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/inland" class="header-list">
               <p>WED</p>
               <span>婚礼</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/hotels" class="header-list">
               <p>HOTEL</p>
               <span>酒店</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/weddingdress" class="header-list">
               <p>DRESS</p>
               <span>婚纱</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="" class="header-list">
               <p>BEAUTY</p>
               <span>美妆</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/jewelry" class="header-list">
               <p>JEWELLERY</p>
               <span>珠宝</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="honeymoon" class="header-list">
               <p>HONEYMOON</p>
               <span>蜜月</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="" class="header-list">
               <p>MALL</p>
               <span>商城</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="" class="header-list">
               <p>NEWS</p>
               <span>资讯</span>
-          </a>
-        </li>
+           </router-link>
+        </li> -->
       </ul>
     </div>
   </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      list: [
+        {
+          to: '/',
+          text: 'HOME',
+          title: '首页'
+        }, {
+          to: '',
+          text: 'BRAND',
+          title: '品牌'
+        }, {
+          to: '/photo',
+          text: 'PHOTO',
+          title: '旅拍'
+        }, {
+          to: '/inland',
+          text: 'WED',
+          title: '婚礼'
+        }, {
+          to: '/hotels',
+          text: 'HOTEL',
+          title: '酒店'
+        }, {
+          to: '/weddingdress',
+          text: 'DRESS',
+          title: '婚纱'
+        }, {
+          to: '',
+          text: 'BEAUTY',
+          title: '美妆'
+        }, {
+          to: '/jewelry',
+          text: 'JEWELLERY',
+          title: '珠宝'
+        }, {
+          to: '/honeymoon',
+          text: 'HONEYMOON',
+          title: '蜜月'
+        }, {
+          to: '',
+          text: 'MALL',
+          title: '商城'
+        }, {
+          to: '',
+          text: 'NEWS',
+          title: '资讯'
+        }
+      ]
+    }
+  }
+}
+
+</script>
 
 <style scoped lang= "less">
 @import "~css/varbile.less";
@@ -91,7 +148,7 @@
   font-family:"微软雅黑,宋体";
   /* font-weight:bold; */
   height: 186px;
-  width: 1349px;
+  width: 100%;
   background: #2e2c2d;
   color: #000;
   padding: 50px 0 15px;
@@ -129,16 +186,12 @@
 }
 
 .header-lists{
-  width: 1349px;
-  height: 99px;
-  margin-top:38px;
-  margin-bottom: 18px;
-  padding: 15px 0 18px;
-  line-height: 31px;
-  border-top:2px solid #bbb;
-  border-bottom:2px solid #bbb;
-  zoom: 1;
-  margin: 1 auto;
+    padding: 15px 0;
+    margin: 18px 0;
+    border-top: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    padding-bottom: 18px;
+    display: block;
 }
 .header-ul {
   width: 962px;
@@ -199,15 +252,3 @@
 }
 
 </style>
-
-<script>
-export default {
-  data () {
-    return {
-      list: [{
-
-      }]
-    }
-  }
-}
-</script>

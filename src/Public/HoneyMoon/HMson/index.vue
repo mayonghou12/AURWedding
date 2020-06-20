@@ -34,5 +34,6 @@
         </div>
     </div>
 </template>
-<style src='../../Common/CSS/honeymoon.css'>
+<style lang="less" scoped>
+@import '~css/honeymoon.css';
 </style>

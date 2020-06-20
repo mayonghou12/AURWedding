@@ -10,19 +10,19 @@
                 </div>
                 <ul>
                     <li>
-                        <a href="#" target="_blank">
+                        <router-link to="/shouhuy">
                             <img src="../../../assets/img/100228N0206.jpg@386w_443h_1e_1c.jpg" />
-                        </a>
+                        </router-link>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <router-link to="/yunitongzai">
                             <img src="../../../assets/img/100228N0206.jpg@386w_443h_1e_1c.jpg" />
-                        </a>
+                        </router-link>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <router-link to="/haibianlanman">
                             <img src="../../../assets/img/100228N0206.jpg@386w_443h_1e_1c.jpg" />
-                        </a>
+                        </router-link>
                     </li>
                 </ul>
             </div>

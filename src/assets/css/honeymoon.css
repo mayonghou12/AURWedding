@@ -1,0 +1,180 @@
+.hm-content{
+    width: 960px;
+    margin: 40px auto;
+}
+.hm-content-title{
+    margin-top: 50px;
+}
+.hm-title{
+    height: 220px;
+    border-bottom: 2px solid #c3b898;
+    background: url(http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/mitit.png) no-repeat center center;
+}
+.hm-content-p{
+    font-size: 20px;
+    color: #605343;
+    margin: 30px 0;
+}
+.hm-content-dd{
+    margin-bottom: 360px;
+}
+.hm-content-d{
+    /* position:absolute; */
+    overflow: hidden;
+    width: 630px;
+    height: 410px;
+    background-image: linear-gradient(#676767,#9198e5);
+}
+.hm-content-dd{
+    overflow: hidden;
+    float: right;
+    width: 620px;
+    height: 410px;
+    background-image: linear-gradient(#e66465, #9198e5);
+}
+.hm-img1 img{
+    /* position: absolute; */
+    width: 603px;
+    cursor: pointer;
+    left: 17px;
+    transition: all 1s;
+}
+.hm-img1 img:hover{
+    transform: scale(1.1);
+}
+.hm-content-d2{
+    float: right;
+    margin-top: 200px;
+    right: 0;
+    top: 600px;
+    overflow: hidden;
+    width: 630px;
+    height: 410px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(#676767,#9198e5);
+}
+.hm-content-dd2{
+    float: right;
+    overflow: hidden;
+    width: 620px;
+    height: 410px;
+    left: 10px;
+    background-image: linear-gradient(#e66465, #9198e5);
+}
+.hm-img2 img{
+    overflow: hidden;
+    width: 603px;
+    cursor: pointer;
+    left: 17px;
+    transition: all 1s;
+}
+.hm-img2 img:hover{
+    transform:rotate(360deg);
+}
+
+#app{
+    background: #eae9e9;
+}
+a{
+    text-decoration: none;
+}
+.content-left-title h3{
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 20px;
+    background-image: linear-gradient(#e66465, #9198e5);
+    margin-bottom: 20px;
+}
+.content-left-title h3:hover{
+    background-image: linear-gradient(#9198e5,#e66465);
+}
+a:hover{
+    cursor: pointer;
+}
+.dress-c{
+    width :1188px;
+    margin:0 auto;
+}
+.dress-c-title{
+    height: 111px;
+    margin: 40px 0;
+    background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/vs.png")no-repeat center left;
+}
+.dress-c-title h3{
+    position: relative;
+    padding-left: 480px;
+    line-height: 111px;
+    font-size: 25px;
+    font-family: simsun;
+    font-weight: bold;
+    color: #5b5a5a;
+}
+.dress-c-title em{
+    left: 158px;
+    top: 80px;
+    width: 421px;
+    height: 0px;
+    display: block;
+    position: absolute;
+    width: 500px;
+    border-bottom: 2px solid #6b5c4c;
+}
+.dress-c-title h3 a{
+    color: #333;
+    text-decoration: none;
+}
+.content-left{
+    /* border: #e66465 solid 1px; */
+    float:left;
+    width: 65%;
+    padding: 2%;
+    margin-bottom: 50px;
+    background:linear-gradient(#9198e5,#e66465);
+}
+.content-left-img{
+margin: 10px;
+overflow: hidden;
+}
+/* 图片自适应大小 */
+.content-left-img img{
+    /* border: springgreen solid 1px; */
+    width: 100%;
+    max-width: 100%;
+    transition: all 1s;
+}
+.content-left-img img:hover{
+    transform: scale(1.1);
+}
+.fanye{
+    margin: 30px 0;
+    display: block;
+    font: 0.75em/1.5 Arial, Verdana, "Microsoft Yahei","微软雅黑","宋体",Helvetica,sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+.fanye p{
+    font-size: 15px;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+.content-right{
+    width: 28%;
+    float: right;
+}
+.content-right-img{
+    display: block;
+    height: 260px;
+    background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/logo03.png")no-repeat center center,linear-gradient(#9198e5,#e66465);
+}
+.content-right-text{
+    display: block;
+    line-height: 57px;
+    color: #615140;
+    font-size: 18px;
+    text-align: center;
+    background: #e99985;
+    transition: all 0.3s;
+}
+.content-right-text:hover{
+    background: #9198e5;
+}

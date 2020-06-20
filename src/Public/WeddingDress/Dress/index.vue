@@ -34,5 +34,6 @@
         </div>
     </div>
 </template>
-<style src='../../Common/CSS/dress.css'>
+<style lang="less" scoped>
+@import '~css/dress.css';
 </style>

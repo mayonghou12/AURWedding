@@ -1,5 +1,22 @@
 <template>
     <div>
+        <div class="w-960">
+            <div class="guonei"></div>
+        </div>
+        <ul class="nav">
+            <li class="fl">
+                <a>
+                    婚礼视频
+                    <span>VIDEOS</span>
+                </a>
+            </li>
+            <li class="fr active">
+                <a>
+                    婚礼图片
+                    <span>PHOTOS</span>
+                </a>
+            </li>
+        </ul>
         <ul class="w-960 photo margin-30-top active">
             <li class="fl">
                 <img src="../../../../assets/img/110858RmMR1.jpg" />
@@ -85,6 +102,29 @@
 
 <style lang="less" scoped>
 @import '~css/common.less';
+.guonei {
+    .background(pink);
+    width: 100%;
+    height: 167px;
+    background: url(../../../../assets/img/guonei.png)no-repeat center left;
+}
+.nav li {
+    width: 48%;
+    height: 85px;
+    .background(#ccc);
+    text-align: center;
+    line-height: 85px;
+    &:hover {
+        background: #d4caaf;
+    }
+    & a{
+        font-size: 37px;
+        color: black;
+    }
+}
+.nav li.active {
+    background: #d4caaf;
+}
 .photo {
     display: none;
 }

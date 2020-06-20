@@ -8,32 +8,33 @@
         </div>
         <div class="Wed-dress">
             <div class="dress">
-                <a>
+                <router-link to="/weddingd">
                     <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg@308w_461h_1e_1c.jpg" alt="">
-                </a>
+                </router-link>
                  <div class="dress-title">秋冬苏妃(3)</div>
             </div>
             <div class="dress">
-                <a>
+                <router-link to="/weddingd">
                     <div class="dress-title">秋冬苏妃(3)</div>
                     <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg@308w_461h_1e_1c.jpg" alt="">
-                </a>
+                </router-link>
             </div>
             <div class="dress">
-                <a>
+                <router-link to="/weddingd">
                     <div class="dress-title">秋冬苏妃(3)</div>
                     <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg@308w_461h_1e_1c.jpg" alt="">
-                </a>
+                </router-link>
             </div>
             <div class="dress">
-                <a>
+                <router-link to="/weddingd">
                     <div class="dress-title">秋冬苏妃(3)</div>
                     <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg@308w_461h_1e_1c.jpg" alt="">
-                </a>
+                </router-link>
             </div>
         </div>
     </div>
 </div>
 </template>
-<style  src='../Common/CSS/dress.css'>
+<style lang="less" scoped>
+@import '~css/dress.css';
 </style>

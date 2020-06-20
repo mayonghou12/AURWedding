@@ -11,16 +11,17 @@
                 <!-- 酒店描述 -->
                 <h3>福建地区（部分）</h3>
                 <ul class="hotel-pub">
-                    <li><a><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></a></li>
-                    <li><a><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></a></li>
-                    <li><a><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></a></li>
-                    <li><a><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></a></li>
-                    <li><a><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></a></li>
-                    <li><a><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></a></li>
+                    <li><router-link to="/hotel"><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></router-link></li>
+                    <li><router-link to="/hotel"><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></router-link></li>
+                    <li><router-link to="/hotel"><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></router-link></li>
+                    <li><router-link to="/hotel"><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></router-link></li>
+                    <li><router-link to="/hotel"><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></router-link></li>
+                    <li><router-link to="/hotel"><img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg@284w_208h_1e_1c.jpg" alt=""></router-link></li>
                 </ul>
             </div>
         </div>
     </div>
 </template>
-<style src='../Common/CSS/hotel.css'>
+<style lang="less" scoped>
+@import '~css/hotel.css';
 </style>

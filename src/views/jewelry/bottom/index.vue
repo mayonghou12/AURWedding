@@ -1,11 +1,24 @@
 <template>
     <div>
         <ul class="w-960">
+            <!-- <li :key="index" v-for="(item, index) in lists" class="fl">
+                <router-link :to="item.to">
+                    <img :src="item.src" />
+                    <div class="zhezhao">
+                        <div name="cont" class="cont">
+                            <div class="biankuang">
+                                <img class="logo" src="../../../assets/img/logo.png" />
+                                <span class="text">{{item.title}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </router-link>
+            </li> -->
             <li class="fl">
                 <router-link to="/subpageOne">
                     <img src="../../../assets/img/110858RmMR1.jpg" />
                     <div class="zhezhao">
-                        <div class="cont">
+                        <div name="cont" class="cont">
                             <div class="biankuang">
                                 <img class="logo" src="../../../assets/img/logo.png" />
                                 <span class="text">结婚三件套 01</span>
@@ -45,18 +58,33 @@
 </template>
 
 <script>
-
+export default {
+  data () {
+    return {
+      lists: [
+        {
+          to: '/subpageOne',
+          src: '../../../assets/img/110858RmMR1.jpg',
+          title: '结婚三件套 01'
+        },
+        {
+          to: '/subpageTwo',
+          src: '../../../assets/img/110858RmMR1.jpg',
+          title: '结婚三件套 02'
+        },
+        {
+          to: '/subpageThree',
+          src: '../../../assets/img/110858RmMR1.jpg',
+          title: '结婚三件套 03'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="less" scoped>
 @import '~css/common.less';
-// .cont{
-//     position: absolute;
-//     left: 25px;
-//     bottom: 0px;
-//     display: none;
-// }
-
 ul {
     margin: 0 auto;
     margin-top: 25px;
@@ -82,7 +110,7 @@ ul {
         .cont{
             position: absolute;
             left: 25px;
-            bottom: 0px;
+            bottom: 92px;
             display: none;
         }
     }
