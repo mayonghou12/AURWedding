@@ -22,7 +22,7 @@
                     <!-- 翻页开始 -->
                     <div class="fanye">
                         <!-- <p>上一篇：<a href="">2016秋冬苏妃(2)</a></p> -->
-                        <p>下一篇：<a href="">蜜月01</a></p>
+                        <p>下一篇：<router-link to="/hmson1">蜜月01</router-link></p>
                     </div>
                 </div>
                 <!-- 婚纱右边内容开始 -->
@@ -34,6 +34,6 @@
         </div>
     </div>
 </template>
-<style lang="less" scoped>
+<style lang="stylus" scoped>
 @import '~css/honeymoon.css';
 </style>

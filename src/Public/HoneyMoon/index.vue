@@ -11,14 +11,14 @@
             <div class="hm-content-img">
                 <div class="hm-content-d" >
                     <div class="hm-content-dd">
-                        <router-link to="/hmoon" class="hm-img1">
+                        <router-link to="/hmson" class="hm-img1">
                             <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/182313GvItK.jpg@772w_507h_1e_1c.jpg" alt="">
                         </router-link>
                     </div>
                 </div>
                 <div class="hm-content-d2" >
                     <div class="hm-content-dd2">
-                        <router-link to="/hmoon" class="hm-img2">
+                        <router-link to="/hmson1" class="hm-img2">
                             <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/182245NJ66t.jpg@772w_507h_1e_1c.jpg" alt="">
                         </router-link>
                     </div>
@@ -27,6 +27,6 @@
         </div>
     </div>
 </template>
-<style lang="less" scoped>
+<style lang="stylus" scoped>
 @import '~css/honeymoon.css';
 </style>

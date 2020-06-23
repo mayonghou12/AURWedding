@@ -14,21 +14,18 @@
             <div class="dress-content">
                 <!-- 婚纱左边内容开始 -->
                 <div class="content-left">
-                    <div class="content-left-title"><h3>2016秋冬苏妃(3)</h3></div>
+                    <div class="content-left-title"><h3>2016秋冬苏妃(2)</h3></div>
                     <!-- 图片内容 -->
                     <div class="content-left-img">
-                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833QsjEk.jpg" alt="">
+                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104706MmduM.jpg" alt="">
                     </div>
                     <div class="content-left-img">
-                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg" alt="">
-                    </div>
-                    <div class="content-left-img">
-                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833sIJ21.jpg" alt="">
+                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104706X443H.jpg" alt="">
                     </div>
                     <!-- 翻页开始 -->
                     <div class="fanye">
-                        <!-- <p>上一篇：<a href="">2016秋冬苏妃(2)</a></p> -->
-                        <p>下一篇：<router-link to="/weddingd1">2016春夏奈特丽(2)</router-link></p>
+                        <p>上一篇：<router-link to="/weddingd">2016秋冬苏妃(3)</router-link></p>
+                        <p>下一篇：<router-link to="/weddingd2">2016春夏奈特丽(1)</router-link></p>
                     </div>
                 </div>
                 <!-- 婚纱右边内容开始 -->

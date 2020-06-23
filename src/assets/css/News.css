@@ -1,0 +1,328 @@
+.news{
+    width: 1188px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+.news-content{
+    width: 960px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.news-content-left{
+    width: 25%;
+    float: left;
+}
+.nav-02{
+    width: 240px;
+}
+.news-logo img{
+    width: 100%;
+    max-width: 100%;
+}
+.news-title{
+    margin-top: 43px;
+}
+.news-titles-01 li{
+    padding-bottom: 10px;
+    border-bottom: #c5a346 2px solid;
+}
+.news-titles-01 a{
+    color: #615140;
+    display: block;
+    font-size: 33px;
+    text-align: center;
+    height: 42px;
+}
+.news-titles-01 a:hover{
+    color: #c5a346;
+}
+.news-title a span{
+    font-size: 25px;
+    display: block;
+    transform: translate(0,-59px);
+    text-transform: capitalize;
+    font-family: "STXinwei",华文新魏,"Microsoft YaHei",微软雅黑;
+}
+.nav-03{
+    width: 240px;
+    margin-top: 30px;
+}
+.nav-03-title{
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #a1906a;
+    margin-bottom: 20px;
+    color: #615140;
+}
+.news-title-01{
+    font-size: 15px;
+    line-height: 50px;
+    background: #eee;
+    padding: 0 15px;
+    transition: all .3s;
+}
+.news-titles-03 li{
+    margin-bottom: 10px;
+}
+.news-titles-03 li:hover{
+    cursor: pointer;
+    background: #c5a346;
+}
+/* 新闻资讯显示控制 */
+.recent-news{
+    /* display: none; */
+}
+/* 右边css */
+.news-content-right{
+    width: 72%;
+    float: right;
+}
+.nwes-r-logo{
+    width: 960px;
+    background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/wxtit.png") no-repeat bottom left;
+    height: 75px;
+}
+.nwes-r-logo p{
+    border-bottom: 2px solid #ddd;
+    height: 50px;
+}
+.news-content{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 960px;
+}
+.news-content-details{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+.news-detail-img{
+    display: block;
+    /* width: 30%; */
+    float: left;
+    background: #fff;
+    overflow: hidden;
+}
+.news-detail-img img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all .3s;
+    border: 0;
+    vertical-align: middle;
+}
+.news-detail-img img:hover{
+    transform: scale(1.1);
+}
+.news-detail-content{
+    width: 70%;
+    float: right;
+}
+.news-detail-content em{
+    font-style: normal;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 14px;
+}
+.news-detail-content h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #615140;
+}.news-detail-content h3:hover{
+    color: #c5a346;
+}
+.news-detail-content p{
+    font-size: 12px;
+    color: #666
+}
+.preparation{
+    /* display: none; */
+    margin: 30px 0;
+}
+.preparation-logo{
+    text-align: center;
+    margin: 30px 0;
+}
+.preparation-content{
+    padding-top: 30px;
+    border-top: 2px solid #d5cbb1;
+    border-bottom: 2px solid #d5cbb1;
+}
+.preparation-content li{
+    background: #eae9e9;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.preparation-content li div{
+    border: 3px solid #fff;
+    padding: 30px 50px;
+}
+.preparation-content li div span{
+    font-size: 25px;
+    color: #615140;
+    font-weight: 400;
+}
+.preparation-content li div p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.starBroker{
+    /* display: none; */
+    height: 910px;
+    margin: 30px 0;
+}
+.starBroker li{
+    margin-bottom: 50px;
+}
+.starBroker li .star-01{
+    display: block;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+}
+.starBroker li .star-02{
+    display: block;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+}
+.starBroker li .star-01 span{
+    display: block;
+    width: 62%;
+    padding: 2%;
+    float: left;
+    border: 1px solid #514225;
+}
+.starBroker li .star-02 span{
+    display: block;
+    width: 62%;
+    padding: 2%;
+    float: left;
+    border: 1px solid #514225;
+}
+.starBroker li .star-01 span img{
+    width: 100%;
+    height: auto;
+}
+.starBroker li .star-02 span img{
+    width: 100%;
+    height: auto;
+}
+.starBroker li .star-01 div{
+    float: right;
+    width: 30%;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/srar02.png") no-repeat bottom right;
+}
+.starBroker li .star-02 div{
+    float: right;
+    width: 30%;
+    height: 160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/srar02.png") no-repeat bottom left;
+}
+.starBroker li .star-01 div p{
+    margin-left: 52px;
+    background: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 80px;
+    padding-right: 10px;
+}
+.starBroker li .star-02 div p{
+    margin-left: 52px;
+    background: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 80px;
+    padding-right: 10px;
+}
+.starBroker li .star-01 div span{
+    font-size: 25px;
+    color: #4c402a;
+    display: inline-block;
+    background: #fff;
+    margin-left: 50px;
+    transition: all .3s;
+    border: none;
+    text-align: center;
+}
+.starBroker li .star-02 div span{
+    font-size: 25px;
+    color: #4c402a;
+    display: inline-block;
+    background: #fff;
+    margin-left: 25px;
+    transition: all .3s;
+    border: none;
+    text-align: center;
+}
+.starBroker li a div span:hover{
+    color: red;
+}
+.news-nav-01{
+    margin-top: 30px;
+}
+.nav01-title{
+    text-align: center;
+    font-size: 30px;
+    color: #a1906a;
+    padding-bottom: 10px;
+    width: 730px;
+    display: block;
+}
+.nav01-title01{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.article-default-content{
+    text-align: justify;
+    font-size: 14px;
+}
+.article-default-content p{
+    word-wrap: break-word;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.article-content-01{
+    text-indent:2em;
+
+}
+.article-content-02{
+    text-align: center;
+    /* width:646px;
+    height: 430px; */
+    overflow: hidden;
+}
+.article-content-02 img{
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle;
+    transition: all 2s;
+}
+.article-content-02 img:hover{
+    transform:scale(1.1);
+}
+.fanye{
+    margin: 30px 0;
+    display: block;
+}
+.fanye p{
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top:0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.fanye a{
+    color: #999;
+}

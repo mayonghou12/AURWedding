@@ -19,16 +19,21 @@
                     <ul class="ht-content-img">
                        <li>
                             <a >
-                                <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt="">
+                                <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/175243Qu8tu.jpg@284w_208h_1e_1c.jpg" alt="">
                             </a>
                             <div class="text">
                                 <p>这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述</p>
                             </div>
                         </li>
                     </ul>
+                     <div class="ht-content-skip">
+                        <div class="content-skip">
+                            <span>上一篇：<router-link to="/hotel7" class="skip">15</router-link></span>
+                        </div>
+                    </div>
                     <div class="ht-content-skip">
                         <div class="content-skip">
-                            <span>下一篇：<router-link to="/hotel1" class="skip">21</router-link></span>
+                            <span>下一篇：<router-link to="/hotel9" class="skip">13</router-link></span>
                         </div>
                     </div>
                 </div>

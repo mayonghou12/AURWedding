@@ -5,7 +5,7 @@
             <div class="dress-c-title">
                 <h3>
                     <a href="">
-                        婚纱
+                        蜜月
                     </a>
                     <em></em>
                 </h3>
@@ -14,21 +14,15 @@
             <div class="dress-content">
                 <!-- 婚纱左边内容开始 -->
                 <div class="content-left">
-                    <div class="content-left-title"><h3>2016秋冬苏妃(3)</h3></div>
+                    <div class="content-left-title"><h3>蜜月(3)</h3></div>
                     <!-- 图片内容 -->
                     <div class="content-left-img">
-                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833QsjEk.jpg" alt="">
-                    </div>
-                    <div class="content-left-img">
-                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg" alt="">
-                    </div>
-                    <div class="content-left-img">
-                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/14/104833sIJ21.jpg" alt="">
+                       <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/182245NJ66t.jpg@772w_507h_1e_1c.jpg" alt="">
                     </div>
                     <!-- 翻页开始 -->
                     <div class="fanye">
                         <!-- <p>上一篇：<a href="">2016秋冬苏妃(2)</a></p> -->
-                        <p>下一篇：<router-link to="/weddingd1">2016春夏奈特丽(2)</router-link></p>
+                        <p>上一篇：<router-link to="/hmson">蜜月02</router-link></p>
                     </div>
                 </div>
                 <!-- 婚纱右边内容开始 -->
@@ -41,5 +35,5 @@
     </div>
 </template>
 <style lang="stylus" scoped>
-@import '~css/dress.css';
+@import '~css/honeymoon.css';
 </style>
