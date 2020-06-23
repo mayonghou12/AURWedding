@@ -5,145 +5,117 @@
       <div class="design-logo">
         <img src="../../../assets/img/logo.png"/>
       </div>
-      <div class="design-h">
+      <div class="design-h clearfix">
         <img class="design-h1" src="../../../assets/img/h1.png">
         <img class="design-h2" src="../../../assets/img/h2.png"/>
       </div>
     </div>
     <div class="header-lists clearfix">
       <ul class="header-ul clearfix">
-        <li v-for="(item, index) in list" :key="index" class="header-li">
-          <router-link :to="item.to" class="header-list">
-            <p>{{item.text}}</p>
-            <span>{{item.title}}</span>
-          </router-link>
+        <li class="header-li">
+          <a class="header-list">
+            <p class="">HOME</p>
+            <span class="">首页</span>
+          </a>
         </li>
-        <!-- <li class="header-li">
-           <router-link to="" class="header-list">
+        <li class="header-li">
+           <a class="header-list">
+             <router-link to="/brandsix">
               <p>BRAND</p>
               <span>品牌</span>
-           </router-link>
+              <ul class="tk-list">
+                <li><router-link to="/brandone">服务内容</router-link></li>
+                <li><router-link to="/brandtwo">团队展示</router-link></li>
+                <li><router-link to="/brandthree">招贤纳士</router-link></li>
+                <li><router-link to="/brandfor">联系我们</router-link></li>
+              </ul>
+            </router-link>
+          </a>
         </li>
         <li class="header-li">
-          <router-link to="/photo" class="header-list">
+          <a class="header-list">
             <p>PHOTO</p>
             <span>旅拍</span>
-          </router-link>
+            <ul class="tk-list tk-lihei">
+                <li><a href="">客片欣赏</a></li>
+                <li><a href="">全年档期</a></li>
+              </ul>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="/inland" class="header-list">
+           <a class="header-list">
               <p>WED</p>
               <span>婚礼</span>
-           </router-link>
+              <ul class="tk-list tk-lihei">
+                <li><a href="">国内婚礼</a></li>
+                <li><a href="">海外婚礼</a></li>
+              </ul>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="/hotels" class="header-list">
+           <a class="header-list">
               <p>HOTEL</p>
               <span>酒店</span>
-           </router-link>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="/weddingdress" class="header-list">
+           <a class="header-list">
               <p>DRESS</p>
               <span>婚纱</span>
-           </router-link>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="" class="header-list">
+           <a class="header-list">
+             <router-link to="/beautyone">
               <p>BEAUTY</p>
               <span>美妆</span>
-           </router-link>
+             <ul class="tk-list tk-liwid">
+                <li><router-link to="/beautyone">私人订制</router-link></li>
+                <li><router-link to="/beautytwo">新娘跟妆</router-link></li>
+                <li><router-link to="/beautythree">生活妆</router-link></li>
+                <li><router-link to="/beautyfor">私家彩妆课程</router-link></li>
+              </ul>
+             </router-link>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="/jewelry" class="header-list">
+           <a class="header-list">
               <p>JEWELLERY</p>
               <span>珠宝</span>
-           </router-link>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="honeymoon" class="header-list">
+           <a class="header-list">
               <p>HONEYMOON</p>
               <span>蜜月</span>
-           </router-link>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="" class="header-list">
+           <a class="header-list">
               <p>MALL</p>
               <span>商城</span>
-           </router-link>
+          </a>
         </li>
         <li class="header-li">
-           <router-link to="" class="header-list">
+           <a class="header-list">
               <p>NEWS</p>
               <span>资讯</span>
-           </router-link>
-        </li> -->
+              <ul class="tk-list tk-liwihi">
+                <li><a href="">新闻动态</a></li>
+                <li><a href="">婚礼筹备</a></li>
+                <li><a href="">明星经纪</a></li>
+              </ul>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
   </div>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      list: [
-        {
-          to: '/',
-          text: 'HOME',
-          title: '首页'
-        }, {
-          to: '',
-          text: 'BRAND',
-          title: '品牌'
-        }, {
-          to: '/photo',
-          text: 'PHOTO',
-          title: '旅拍'
-        }, {
-          to: '/inland',
-          text: 'WED',
-          title: '婚礼'
-        }, {
-          to: '/hotels',
-          text: 'HOTEL',
-          title: '酒店'
-        }, {
-          to: '/weddingdress',
-          text: 'DRESS',
-          title: '婚纱'
-        }, {
-          to: '',
-          text: 'BEAUTY',
-          title: '美妆'
-        }, {
-          to: '/jewelry',
-          text: 'JEWELLERY',
-          title: '珠宝'
-        }, {
-          to: '/honeymoon',
-          text: 'HONEYMOON',
-          title: '蜜月'
-        }, {
-          to: '',
-          text: 'MALL',
-          title: '商城'
-        }, {
-          to: '/news',
-          text: 'NEWS',
-          title: '资讯'
-        }
-      ]
-    }
-  }
-}
-
-</script>
-
 <style scoped lang= "less">
 @import "~css/varbile.less";
-
+a{ text-decoration:none}
 .header1{
   font-family:"微软雅黑,宋体";
   /* font-weight:bold; */
@@ -178,7 +150,6 @@ export default {
   position: absolute;
   right: 20px;
   bottom: 20px;
-
 }
 
 .design-h1{
@@ -186,12 +157,16 @@ export default {
 }
 
 .header-lists{
-    padding: 15px 0;
-    margin: 18px 0;
-    border-top: 2px solid #bbb;
-    border-bottom: 2px solid #bbb;
-    padding-bottom: 18px;
-    display: block;
+  width: 1349px;
+  height: 99px;
+  margin-top:38px;
+  margin-bottom: 18px;
+  padding: 15px 0 18px;
+  line-height: 31px;
+  border-top:2px solid #bbb;
+  border-bottom:2px solid #bbb;
+  zoom: 1;
+  margin: 1 auto;
 }
 .header-ul {
   width: 962px;
@@ -216,6 +191,7 @@ export default {
   color: #333;
   text-decoration: none;
   text-align: center;
+  position: relative;
   /* &:hover {
     .el-hover( #A27f30, transparent);
   } */
@@ -223,7 +199,35 @@ export default {
     & p,span {
       color: #A27f30;
     }
+    & .tk-list{
+      display:block;
+    }
   }
+}
+.tk-list{
+  font-size: 16px;
+  width: 94px;
+  height: 136px;
+  line-height: 35px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: rgba(161, 144, 106, 0.78);
+  display: none;
+}
+.tk-lihei{
+   height: 100%;
+}
+.tk-liwid{
+  width: 100px;
+}
+.tk-liwihi{
+  width: 94px;
+  height: 107px;
+}
+.tk-list a{
+  color: #fff;
+  text-decoration:none;
 }
 .header-list p{
   font-size:15px;

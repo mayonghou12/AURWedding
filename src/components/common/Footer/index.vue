@@ -66,7 +66,7 @@
     background: #abaaaa;
     color: #000;
     font-size: 12px;
-    margin: 200px 0 0 ;
+    margin: 40px 0 0 ;
     padding: 60px 0 ;
     border-top: 7px solid #2e2d2d;
   }
@@ -113,7 +113,5 @@
     text-decoration: none;
     font-family:"微软雅黑,宋体";
     font-weight:bold;
-    text-align: left;
-    display: block;
   }
 </style>
