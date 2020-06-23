@@ -130,7 +130,7 @@ export default {
           text: 'MALL',
           title: '商城'
         }, {
-          to: '',
+          to: '/news',
           text: 'NEWS',
           title: '资讯'
         }
