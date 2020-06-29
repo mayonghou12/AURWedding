@@ -115,8 +115,8 @@
   .about-left-li a{
       margin: 40px 0 50px;
       width: 240px;
-      height: 50px;
-      margin-top: 40px;
+      height: 42px;
+      margin-top: 10px;
       color: #615140;
       float: left;
       font-size: 33px;
@@ -151,7 +151,7 @@
     }
     .lxwm{
         width: 685px;
-        height: 100%;
+        height: 660px;
         text-align: center;
         border-bottom: 1px solid #d0c8b5;
     }
@@ -173,7 +173,7 @@
     .lxm em{
         display: block;
         width: 593px;
-        height: 100%;
+        height: 70px;
         font-size: 18px;
         margin: 0 0 0 89px;
         text-align: left;

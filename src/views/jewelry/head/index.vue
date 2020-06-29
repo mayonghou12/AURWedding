@@ -6,9 +6,9 @@
                 <span class="fl margin-10-left square margin-10-top"></span>
                 <span class="fl margin-20-left">珠宝</span>
             </div>
-            <div class="text padding-10-left">
-                <span>PREPARATION</span>
-            </div>
+            <!-- <div class="padding-10-left"> -->
+                <!-- <span class="padding-10-left">PREPARATION</span> -->
+            <!-- </div> -->
         </div>
     </div>
 </template>
@@ -30,12 +30,11 @@
         }
     }
 }
-.text {
-    & span {
-        .inline-block;
-        .color(#000);
-        .font(6);
-        margin-top: 8px;
-    }
+.padding-10-left span {
+    .inline-block;
+    .color(#000);
+    .font(6);
+    float: left;
+    margin-top: 8px;
 }
 </style>

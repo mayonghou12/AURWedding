@@ -47,9 +47,11 @@
 
 <script>
 import Top from '@/views/photo/top/top.vue'
+import { api } from 'pub/api'
 export default {
   data () {
     return {
+      api,
       lists: [
         {
           src: 'http://pic.tdy.picdns.com/52-0146/block/1602621374/201709/08/155210xRMd7.jpg@142w_353h_1e_1c.jpg'
@@ -106,6 +108,14 @@ export default {
   components: {
     Top
   }
+//   created () {
+//     this.$store.dispatch('home/actionGetTourPhoto')
+//   },
+//   computed: {
+//     typeList () {
+//       return this.$store.state.home.typeList
+//     }
+//   }
 }
 </script>
 
@@ -154,8 +164,9 @@ export default {
             float: left;
             background: #000;
             & img {
-                width: 100%;
-                height: auto;
+                width: 114px;
+                height: 283.39px;
+                // height: auto;
                 border: 0;
                 vertical-align: middle;
                 opacity: 1;

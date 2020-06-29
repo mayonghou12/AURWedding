@@ -13,22 +13,22 @@
                 <p>产品套系&nbsp;/&nbsp;PRICE&nbsp;>></p>
                 <ul>
                   <li class="fl">
-                    <a href="#">
+                    <router-link to="/crystal">
                       <img src="../../assets/img/hw2.png" />
                       <div class="text">
                         <p>水晶套系</p>
                         <span>Crystal set of system</span>
                       </div>
-                    </a>
+                    </router-link>
                   </li>
                   <li class="fl">
-                    <a href="#">
+                    <router-link to="/diamond">
                       <img src="../../assets/img/hw2.png" />
                       <div class="text">
                           <p>钻石套系</p>
                           <span>Diamond set of system</span>
                       </div>
-                    </a>
+                    </router-link>
                   </li>
                 </ul>
               </div>
@@ -118,12 +118,12 @@
           position: relative;
           & a {
             & .text {
-              text-align: center;
+              text-align: right;
               color: #776654;
               font-size: 23px;
               position: absolute;
-              top: 85px;
-              right: 60px;
+              top: 50px;
+              right: 85px;
               & p {
                 font-size: 32px;
               }

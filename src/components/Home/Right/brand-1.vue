@@ -159,19 +159,19 @@
     }
   }
   .about-left-li a{
-      margin: 40px 0 50px;
-      width: 240px;
-      height: 50px;
-      margin-top: 40px;
-      color: #615140;
-      float: left;
-      font-size: 33px;
-      font-family:"微软雅黑,宋体";
-      text-align: center;
-      line-height: 30px;
-      border-bottom: 2px solid #615140;
-      display: block;
-  }
+        margin: 40px 0 50px;
+        width: 240px;
+        height: 42px;
+        margin-top: 10px;
+        color: #615140;
+        float: left;
+        font-size: 33px;
+        font-family:"微软雅黑,宋体";
+        text-align: center;
+        line-height: 30px;
+        border-bottom: 2px solid #615140;
+        display: block;
+    }
   .about-left-li span {
     width: 240px;
     height: 37px;

@@ -140,6 +140,6 @@ a:hover{
       height: auto
   }
   .hotel-pub li a img:hover{
-      transform: scale(1.08);
+      transform: scale(1.2);
       cursor: pointer;
   }

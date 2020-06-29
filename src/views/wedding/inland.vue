@@ -1,18 +1,18 @@
 <template>
     <div>
         <div class="w-960">
-            <!-- <Head></Head> -->
+            <Head></Head>
             <Bottom></Bottom>
         </div>
     </div>
 </template>
 
 <script>
-// import Head from 'views/wedding/inland/head'
+import Head from 'views/wedding/inland/head'
 import Bottom from 'views/wedding/inland/bottom'
 export default {
   components: {
-    // Head,
+    Head,
     Bottom
   }
 }

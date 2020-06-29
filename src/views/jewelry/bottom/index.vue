@@ -1,9 +1,9 @@
 <template>
     <div>
         <ul class="w-960">
-            <!-- <li :key="index" v-for="(item, index) in lists" class="fl">
-                <router-link :to="item.to">
-                    <img :src="item.src" />
+            <li :key="index" v-for="(item, index) in typeList" class="fl">
+                <router-link>
+                    <img :src="item.url" />
                     <div class="zhezhao">
                         <div name="cont" class="cont">
                             <div class="biankuang">
@@ -13,8 +13,8 @@
                         </div>
                     </div>
                 </router-link>
-            </li> -->
-            <li class="fl">
+            </li>
+           <!-- <li class="fl">
                 <router-link to="/subpageOne">
                     <img src="../../../assets/img/110858RmMR1.jpg" />
                     <div class="zhezhao">
@@ -26,8 +26,8 @@
                         </div>
                     </div>
                 </router-link>
-            </li>
-            <li class="fl">
+            </li> -->
+           <!--  <li class="fl">
                 <router-link to="/subpageTwo">
                     <img src="../../../assets/img/110823FZ4w3.jpg" />
                     <div class="zhezhao">
@@ -52,33 +52,43 @@
                         </div>
                     </div>
                 </router-link>
-            </li>
+            </li> -->
         </ul>
     </div>
 </template>
 
 <script>
+
 export default {
-  data () {
-    return {
-      lists: [
-        {
-          to: '/subpageOne',
-          src: '../../../assets/img/110858RmMR1.jpg',
-          title: '结婚三件套 01'
-        },
-        {
-          to: '/subpageTwo',
-          src: '../../../assets/img/110858RmMR1.jpg',
-          title: '结婚三件套 02'
-        },
-        {
-          to: '/subpageThree',
-          src: '../../../assets/img/110858RmMR1.jpg',
-          title: '结婚三件套 03'
-        }
-      ]
+//   data () {
+//     return {
+//       lists: [
+//         {
+//           to: '/subpageOne',
+//           src: '../../../assets/img/110858RmMR1.jpg',
+//           title: '结婚三件套 01'
+//         },
+//         {
+//           to: '/subpageTwo',
+//           src: '../../../assets/img/110858RmMR1.jpg',
+//           title: '结婚三件套 02'
+//         },
+//         {
+//           to: '/subpageThree',
+//           src: '../../../assets/img/110858RmMR1.jpg',
+//           title: '结婚三件套 03'
+//         }
+//       ]
+//     }
+//   },
+  computed: {
+    typeList () {
+      console.log(this.$store.state)
+      return this.$store.state.home.typeList
     }
+  },
+  created () {
+    this.$store.dispatch('home/actionGetJewelryList')
   }
 }
 </script>

@@ -17,6 +17,27 @@ import SubpageThree from '@/views/jewelry/subpageThree.vue'
 import photo from '@/views/photo/photo.vue'
 import inland from '@/views/wedding/inland.vue'
 import overseas from '@/views/wedding/overseas.vue'
+import yearly from '@/views/photo/yearly/yearly.vue'
+import appreciate from '@/views/photo/appreciate/appreciate.vue'
+import details from '@/views/photo/appreciate/details.vue'
+
+import inlandphoto from '@/views/wedding/inland/bottom/photo.vue'
+import inlandvideo from '@/views/wedding/inland/bottom/video.vue'
+import crystal from '@/views/wedding/overseas/crystal.vue'
+import diamond from '@/views/wedding/overseas/diamond.vue'
+
+import brandone from 'comp/Home/Right/brand-1.vue'
+import brandtwo from 'comp/Home/Right/brand-2.vue'
+import brandthree from 'comp/Home/Right/brand-3.vue'
+import brandfor from 'comp/Home/Right/brand-4.vue'
+import brandfive from 'comp/Home/Right/brand-5.vue'
+import brandsix from 'comp/Home/Right/brand-6.vue'
+import Beauty from 'comp/Beauty/index.vue'
+import beautyone from 'comp/Beauty/beauty-1.vue'
+import beautytwo from 'comp/Beauty/beauty-2.vue'
+import beautythree from 'comp/Beauty/beauty-3.vue'
+import beautyfor from 'comp/Beauty/beauty-4.vue'
+
 import Hotels from '@/Public/Hotel/index.vue'
 import Hotel from '@/Public/Hotel/Competate/index.vue'
 import Hotel1 from '@/Public/Hotel/Competate/index1.vue'
@@ -56,8 +77,6 @@ import newsNav3 from '@/Public/News/NewsLittle/index4.vue'
 import newsNav4 from '@/Public/News/NewsLittle/index5.vue'
 import newsNav5 from '@/Public/News/NewsLittle/index6.vue'
 import newsNav6 from '@/Public/News/NewsLittle/index7.vue'
-import yearly from '@/views/photo/yearly/yearly.vue'
-import appreciate from '@/views/photo/appreciate/appreciate.vue'
 
 Vue.use(VueRouter)
 
@@ -69,7 +88,7 @@ const routes = [
     path: '/jewelry',
     component: Jewelry
   }, {
-    path: '/subpageOne',
+    path: '/subpageOne/:id',
     component: SubpageOne
   }, {
     path: '/subpageTwo',
@@ -87,7 +106,7 @@ const routes = [
     path: '/haibianlanman',
     component: haibianlanman
   }, {
-    path: '/wedding1',
+    path: '/wedding1/:id',
     component: wedding1
   }, {
     path: '/wedding2',
@@ -109,17 +128,26 @@ const routes = [
     component: photo
   }, {
     path: '/inland',
-    component: inland
+    component: inland,
+    redirect: (to) => {
+      return '/inlandphoto'
+    },
+    children: [{
+      path: '/inlandphoto',
+      component: inlandphoto
+    }, {
+      path: '/inlandvideo',
+      component: inlandvideo
+    }]
+  },
+  {
+    path: '/crystal',
+    component: crystal
   }, {
-    path: '/hotels',
-    component: Hotels
-  }, {
-    path: '/hotel',
-    component: Hotel
-  }, {
-    path: '/weddingdress',
-    component: weddingdress
-  }, {
+    path: '/diamond',
+    component: diamond
+  },
+  {
     path: '/hotels',
     component: Hotels
   }, {
@@ -233,7 +261,8 @@ const routes = [
   }, {
     path: '/newsNav5',
     component: newsNav5
-  }, {
+  },
+  {
     path: '/newsNav6',
     component: newsNav6
   }, {
@@ -243,8 +272,52 @@ const routes = [
     path: '/appreciate',
     component: appreciate
   }, {
+    path: '/details/:id',
+    component: details
+  }, {
     path: '/overseas',
     component: overseas
+  }, {
+    path: '/index.vue',
+    component: Beauty
+  }, {
+    path: '/beautyone',
+    component: beautyone
+  }, {
+    path: '/beautytwo',
+    component: beautytwo
+  },
+  {
+    path: '/beautythree',
+    component: beautythree
+  },
+  {
+    path: '/beautyfor',
+    component: beautyfor
+  },
+  {
+    path: '/brandone',
+    component: brandone
+  },
+  {
+    path: '/brandtwo',
+    component: brandtwo
+  },
+  {
+    path: '/brandthree',
+    component: brandthree
+  },
+  {
+    path: '/brandfor',
+    component: brandfor
+  },
+  {
+    path: '/brandfive',
+    component: brandfive
+  },
+  {
+    path: '/brandsix',
+    component: brandsix
   }
 ]
 

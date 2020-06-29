@@ -1,5 +1,5 @@
 .news{
-    width: 1188px;
+    width: 960px;
     margin: 0 auto;
     margin-top: 30px;
 
@@ -79,9 +79,17 @@
     float: right;
 }
 .nwes-r-logo{
-    width: 960px;
+    /* width: 960px; */
     background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/wxtit.png") no-repeat bottom left;
     height: 75px;
+}
+.nwes-r-logo1{
+    background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/coubei.png") no-repeat bottom left;
+
+}
+.nwes-r-logo2{
+    background: url("http://www.52-0146.demo.taiduyun.com/temp/temp/52/52-0146/201709061819/images/startit.png") no-repeat bottom left;
+
 }
 .nwes-r-logo p{
     border-bottom: 2px solid #ddd;
@@ -90,7 +98,7 @@
 .news-content{
     margin-top: 10px;
     margin-bottom: 30px;
-    width: 960px;
+    /* width: 960px; */
 }
 .news-content-details{
     margin-bottom: 20px;
@@ -116,8 +124,9 @@
     transform: scale(1.1);
 }
 .news-detail-content{
-    width: 70%;
-    float: right;
+    width: 43%;
+    float: left;
+    margin-left: 10px;
 }
 .news-detail-content em{
     font-style: normal;
@@ -230,7 +239,7 @@
 }
 .starBroker li .star-01 div p{
     margin-left: 52px;
-    background: #fff;
+    background:#eae9e9;
     display: inline-block;
     font-size: 16px;
     margin-top: 80px;
@@ -238,7 +247,7 @@
 }
 .starBroker li .star-02 div p{
     margin-left: 52px;
-    background: #fff;
+    background: #eae9e9;
     display: inline-block;
     font-size: 16px;
     margin-top: 80px;
@@ -248,7 +257,7 @@
     font-size: 25px;
     color: #4c402a;
     display: inline-block;
-    background: #fff;
+    background: #eae9e9;
     margin-left: 50px;
     transition: all .3s;
     border: none;
@@ -258,13 +267,13 @@
     font-size: 25px;
     color: #4c402a;
     display: inline-block;
-    background: #fff;
+    background: #eae9e9;
     margin-left: 25px;
     transition: all .3s;
     border: none;
     text-align: center;
 }
-.starBroker li a div span:hover{
+.starBroker li a:hover div span{
     color: red;
 }
 .news-nav-01{

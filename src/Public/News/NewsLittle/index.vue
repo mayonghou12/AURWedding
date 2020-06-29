@@ -33,7 +33,7 @@
                 </div>
                 <div class="news-content-right">
                     <!-- logo -->
-                   <div class="nwes-r-logo">
+                   <div class="nwes-r-logo nwes-r-logo1">
                        <p></p>
                    </div>
                     <!-- 婚礼筹办 -->

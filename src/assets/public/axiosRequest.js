@@ -4,32 +4,45 @@
 
 import { axiosRequest } from './axios'
 
-const setBanner = (data, success, fail) => {
+const getJewelry = (options) => {
   axiosRequest({
-    url: 'setBanner',
-    data: data
-  }).then((res) => {
-    success()
-    // this.loading = false
-    // this.$emit('closeModal')
-  }).catch(() => {
-    // this.loading = false
-    fail()
+    url: 'getJewel'
+    // data: options.data
+  }).then((data) => {
+    options.success(data)
+  })
+  // .catch(() => {
+
+  // })
+}
+
+const getTourPhoto = (options) => {
+  axiosRequest({
+    url: 'getTour'
+  }).then((data) => {
+    options.success(data)
   })
 }
 
-const getBanner = (options) => {
+const getWedding = (options) => {
   axiosRequest({
-    url: 'getBanner',
-    data: options.data
-  }).then((res) => {
-    console.log(res)
-    options.success(res)
-  }).catch(() => {
+    url: 'getWedding'
+  }).then((data) => {
+    options.success(data)
+  })
+}
+
+const getHotel = (options) => {
+  axiosRequest({
+    url: 'getHotel'
+  }).then((data) => {
+    options.success(data)
   })
 }
 
 export {
-  setBanner,
-  getBanner
+  getJewelry,
+  getTourPhoto,
+  getWedding,
+  getHotel
 }

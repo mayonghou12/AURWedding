@@ -6,6 +6,9 @@ module.exports = {
     config.resolve.alias.set('@', resolve(__dirname, 'src'))
       .set('css', resolve(__dirname, 'src/assets/css'))
       .set('views', resolve(__dirname, 'src/views'))
+      .set('pub', resolve(__dirname, 'src/assets/public'))
+      .set('common', resolve(__dirname, 'src/components/common'))
+      .set("comp", resolve(__dirname, "src/components"))
   },
   devServer: {
   // 1.在接口里用*解决跨域 ==> app.all('*', function(req, res, next){res.header('Access-Control-Allow-Origin', '*')next()})
@@ -14,7 +17,7 @@ module.exports = {
     proxy: {
       '/api': {
         changeOrigin: true,
-        target: 'http://localhost:3000/',
+        target: 'http://192.168.1.5:3000/',
         pathRewrite: {
           '^/api': ''
         }

@@ -9,9 +9,14 @@
                     <p></p>
                 </div>
                 <ul>
-                    <li>
+                    <li :key="index" v-for="(item,index) in typeList">
+                        <router-link :to="/details/+ item.tour_id">
+                            <img :src="api + item.img_url_new[0]" />
+                        </router-link>
+                    </li>
+                    <!-- <li>
                         <router-link to="/shouhuy">
-                            <img src="../../../assets/img/100228N0206.jpg@386w_443h_1e_1c.jpg" />
+                            <img src="http://pic.tdy.picdns.com/52-0146/show/201709/07/100019GSNKs.jpg@386w_443h_1e_1c.jpg" />
                         </router-link>
                     </li>
                     <li>
@@ -21,9 +26,9 @@
                     </li>
                     <li>
                         <router-link to="/haibianlanman">
-                            <img src="../../../assets/img/100228N0206.jpg@386w_443h_1e_1c.jpg" />
+                            <img src="http://pic.tdy.picdns.com/52-0146/show/201709/07/095707WgPDk.jpg@386w_443h_1e_1c.jpg" />
                         </router-link>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -32,9 +37,23 @@
 
 <script>
 import Top from '@/views/photo/top/top.vue'
+import { api } from 'pub/api.js'
 export default {
+  data () {
+    return {
+      api
+    }
+  },
   components: {
     Top
+  },
+  created () {
+    this.$store.dispatch('home/actionGetTourPhoto')
+  },
+  computed: {
+    typeList () {
+      return this.$store.state.home.typeList
+    }
   }
 }
 </script>
@@ -42,10 +61,10 @@ export default {
 <style lang="less" scoped>
 @import '~css/common.less';
 .kepian {
-    margin: 0 auto;
+    // margin: 0 auto;
     background: #fff;
     padding: 30px 2%;
-    width: 96%;
+    width: 100%;
     & .tour {
         display: block;
         & .tit {
@@ -83,14 +102,14 @@ export default {
             & li {
                 float: left;
                 width: 32.2%;
-                margin-right: 1.1%;
+                margin-right: 10px;
                 margin-bottom: 1.1%;
                 & a {
                     color: #333;
                     display: block;
                     & img {
-                        width: 100%;
-                        height: auto;
+                        width: 300px;
+                        height: 344.8px;
                     }
                 }
             }

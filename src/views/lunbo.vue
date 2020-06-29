@@ -21,10 +21,15 @@
           <p></p>
         </div>
         <ul class="cl">
-          <li>
-          <router-link to='/shouhuy'>
+          <li v-for="(item, index) in typeList" :key="index">
+            <router-link :to="/details/ + item.tour_id">
+              <img :src="api + item.img_url_new[0]" />
+            </router-link>
+          </li>
+          <!-- <li>
+            <router-link to='/shouhuy'>
             <img src="http://pic.tdy.picdns.com/52-0146/show/201709/07/100019GSNKs.jpg@386w_443h_1e_1c.jpg">
-          </router-link>
+            </router-link>
           </li>
           <li>
             <router-link to='/yunitongzai'>
@@ -32,10 +37,10 @@
             </router-link>
           </li>
           <li>
-          <router-link to='haibianlanman'>
+            <router-link to='haibianlanman'>
             <img src="http://pic.tdy.picdns.com/52-0146/show/201709/07/095707WgPDk.jpg@386w_443h_1e_1c.jpg">
-          </router-link>
-          </li>
+            </router-link>
+          </li> -->
         </ul>
       </div>
 
@@ -47,7 +52,19 @@
           <p></p>
         </div>
         <ul class="al">
-          <li>
+          <li v-for="(item, index) in weddingList" :key="index">
+            <router-link :to='/wedding1/ + item.wed_id'>
+                <img :src="api + item.img_url[0]">
+              <div class="alcont">
+              </div>
+              <div class="ins">
+                    <span></span>
+                    <!-- <p>世纪金源大酒店</p> -->
+                    <h3>【{{item.wed_title}}】</h3>
+              </div>
+            </router-link>
+          </li>
+          <!-- <li>
             <router-link to='/wedding1'>
                 <img src="//pic.tdy.picdns.com/52-0146/show/201709/07/103736J1V9B.jpg@385w_359h_1e_1c.jpg">
               <div class="alcont">
@@ -118,12 +135,41 @@
                   <h3>【梦里花开】</h3>
             </div>
             </router-link>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import { api } from 'pub/api.js'
+export default {
+  data () {
+    return {
+      api,
+      list: [
+        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/12/160754iZW5m.jpg@1188w_628h_1e_1c.jpg' },
+        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/07/092808Q4n9e.jpg@1188w_628h_1e_1c.jpg' },
+        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/07/092817F055I.jpg@1188w_628h_1e_1c.jpg' },
+        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/07/092828vD3zf.jpg@1188w_628h_1e_1c.jpg' }
+      ]
+    }
+  },
+  created () {
+    this.$store.dispatch('home/actionGetTourPhoto')
+    this.$store.dispatch('home/actionGetWedding')
+  },
+  computed: {
+    typeList () {
+      return this.$store.state.home.typeList
+    },
+    weddingList () {
+      return this.$store.state.home.weddingList
+    }
+  }
+}
+</script>
 
 <style lang='less'>
 .item-i div{
@@ -298,7 +344,8 @@
 }
 .global li a img {
   width: 100%;
-  height: auto;
+  // height: auto;
+  height: 360px;
 }
 /* 婚庆案例开始 */
 .Wedding {
@@ -362,7 +409,7 @@
     height: 290.3px;
     img {
        width: 100%;
-      height: auto;
+      height: 100%;
     }
     .alcont{
       // animation: fade-in;/*动画名称*/
@@ -420,17 +467,3 @@
   } */
 
 </style>
-<script>
-export default {
-  data () {
-    return {
-      list: [
-        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/12/160754iZW5m.jpg@1188w_628h_1e_1c.jpg' },
-        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/07/092808Q4n9e.jpg@1188w_628h_1e_1c.jpg' },
-        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/07/092817F055I.jpg@1188w_628h_1e_1c.jpg' },
-        { img: 'http://pic.tdy.picdns.com/52-0146/block/1420008946/201709/07/092828vD3zf.jpg@1188w_628h_1e_1c.jpg' }
-      ]
-    }
-  }
-}
-</script>

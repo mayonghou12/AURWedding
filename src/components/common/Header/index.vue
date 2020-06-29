@@ -13,10 +13,10 @@
     <div class="header-lists clearfix">
       <ul class="header-ul clearfix">
         <li class="header-li">
-          <a class="header-list">
+          <router-link to="/" class="header-list">
             <p class="">HOME</p>
             <span class="">首页</span>
-          </a>
+          </router-link>
         </li>
         <li class="header-li">
            <a class="header-list">
@@ -34,35 +34,47 @@
         </li>
         <li class="header-li">
           <a class="header-list">
+          <router-link to="/photo" class="">
             <p>PHOTO</p>
             <span>旅拍</span>
+          </router-link>
             <ul class="tk-list tk-lihei">
-                <li><a href="">客片欣赏</a></li>
-                <li><a href="">全年档期</a></li>
+                <router-link to="/appreciate">
+                  <li><a href="">客片欣赏</a></li>
+                </router-link>
+                <router-link to="/yearly">
+                  <li><a href="">全年档期</a></li>
+                </router-link>
               </ul>
           </a>
         </li>
         <li class="header-li">
            <a class="header-list">
+             <router-link to="/inland">
               <p>WED</p>
               <span>婚礼</span>
+           </router-link>
               <ul class="tk-list tk-lihei">
-                <li><a href="">国内婚礼</a></li>
-                <li><a href="">海外婚礼</a></li>
+                <router-link to="/inland">
+                  <li><a href="">国内婚礼</a></li>
+                </router-link>
+                <router-link to="/overseas">
+                  <li><a href="">海外婚礼</a></li>
+                </router-link>
               </ul>
           </a>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/hotels" class="header-list">
               <p>HOTEL</p>
               <span>酒店</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/weddingdress" class="header-list">
               <p>DRESS</p>
               <span>婚纱</span>
-          </a>
+          </router-link>
         </li>
         <li class="header-li">
            <a class="header-list">
@@ -79,33 +91,27 @@
           </a>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/jewelry" class="header-list">
               <p>JEWELLERY</p>
               <span>珠宝</span>
-          </a>
+           </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
+           <router-link to="/honeymoon" class="header-list">
               <p>HONEYMOON</p>
               <span>蜜月</span>
-          </a>
+          </router-link>
         </li>
         <li class="header-li">
-           <a class="header-list">
-              <p>MALL</p>
-              <span>商城</span>
-          </a>
-        </li>
-        <li class="header-li">
-           <a class="header-list">
+           <router-link to="/news" class="header-list">
               <p>NEWS</p>
               <span>资讯</span>
               <ul class="tk-list tk-liwihi">
-                <li><a href="">新闻动态</a></li>
-                <li><a href="">婚礼筹备</a></li>
-                <li><a href="">明星经纪</a></li>
+                <li><router-link to="/news" href="">新闻动态</router-link></li>
+                <li><router-link to="/preparation" href="">婚礼筹备</router-link></li>
+                <li><router-link to="/starBroker" href="">明星经纪</router-link></li>
               </ul>
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -157,7 +163,7 @@ a{ text-decoration:none}
 }
 
 .header-lists{
-  width: 1349px;
+  /* width: 960px; */
   height: 99px;
   margin-top:38px;
   margin-bottom: 18px;
@@ -166,10 +172,10 @@ a{ text-decoration:none}
   border-top:2px solid #bbb;
   border-bottom:2px solid #bbb;
   zoom: 1;
-  margin: 1 auto;
+  margin: 30px auto;
 }
 .header-ul {
-  width: 962px;
+  width: 960px;
   height: 100%;
   zoom: 1;
   margin: 0 auto;
@@ -177,6 +183,7 @@ a{ text-decoration:none}
 }
 .header-li {
   float: left;
+  width: 10%;
   /* position: relative; */
   list-style: none;
 }
@@ -214,6 +221,7 @@ a{ text-decoration:none}
   left: 0;
   background: rgba(161, 144, 106, 0.78);
   display: none;
+  z-index: 999;
 }
 .tk-lihei{
    height: 100%;

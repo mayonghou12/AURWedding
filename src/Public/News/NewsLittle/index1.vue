@@ -29,7 +29,7 @@
                 </div>
                 <div class="news-content-right">
                     <!-- logo -->
-                   <div class="nwes-r-logo">
+                   <div class="nwes-r-logo nwes-r-logo2">
                        <p></p>
                    </div>
                     <!-- 明星资讯 -->
