@@ -1,4 +1,4 @@
-import { getJewelry, getTourPhoto, getWedding, getHotel } from 'pub/axiosRequest'
+import { getJewelry, getTourPhoto, getWedding, getHotel, getTourThree, getWeddingSix } from 'pub/axiosRequest'
 var state = {
   typeList: [],
   weddingList: []
@@ -8,12 +8,13 @@ var mutations = {
   changeList (state, list) {
     state.typeList = list
   },
-  changeWeddingList (state, list) {
+  changeweddingList (state, list) {
     state.weddingList = list
   }
 }
 
 var actions = {
+  // 珠宝
   actionGetJewelryList ({ commit }) {
     getJewelry({
       success: (data) => {
@@ -21,6 +22,22 @@ var actions = {
       }
     })
   },
+  // 首页旅拍
+  actionGetTourThree (context, data) {
+    getTourThree({
+      data,
+      success: (res) => {
+        if (res.status === 200) {
+          var typeList = res.data.list
+          typeList.forEach((item) => {
+            item.img_url = item.img_url.split(',')
+          })
+          context.commit('changeList', res.data.list)
+        }
+      }
+    })
+  },
+  // 旅拍
   actionGetTourPhoto ({ commit }, data) {
     getTourPhoto({
       data,
@@ -28,13 +45,29 @@ var actions = {
         if (res.status === 200) {
           var typeList = res.data.list
           typeList.forEach((item) => {
-            item.img_url_new = item.img_url.split(',')
+            item.img_url = item.img_url.split(',')
           })
           commit('changeList', typeList)
         }
       }
     })
   },
+  // 首页婚礼
+  actionGetWeddingSix (context, data) {
+    getWeddingSix({
+      data,
+      success: (res) => {
+        if (res.status === 200) {
+          var weddingList = res.data.list
+          weddingList.forEach((item, index) => {
+            item.img_url = item.img_url.split(',')
+          })
+          context.commit('changeweddingList', res.data.list)
+        }
+      }
+    })
+  },
+  // 婚礼
   actionGetWedding (context, data) {
     getWedding({
       data,
@@ -44,11 +77,12 @@ var actions = {
           weddingList.forEach((item) => {
             item.img_url = item.img_url.split(',')
           })
-          context.commit('changeWeddingList', weddingList)
+          context.commit('changeweddingList', weddingList)
         }
       }
     })
   },
+  // 酒店
   actionGetHotel (context) {
     getHotel({
       success: (res) => {

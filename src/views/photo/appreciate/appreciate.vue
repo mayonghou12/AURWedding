@@ -11,7 +11,7 @@
                 <ul>
                     <li :key="index" v-for="(item,index) in typeList">
                         <router-link :to="/details/+ item.tour_id">
-                            <img :src="api + item.img_url_new[0]" />
+                            <img :src="api + item.img_url[0]" />
                         </router-link>
                     </li>
                     <!-- <li>
@@ -110,6 +110,10 @@ export default {
                     & img {
                         width: 300px;
                         height: 344.8px;
+                        transition: all .5s;
+                    }
+                    & img:hover {
+                        transform: scale(1.1);
                     }
                 }
             }

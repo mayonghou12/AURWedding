@@ -17,13 +17,13 @@
         <div class="global-upper">
           <div class="global-a">全球旅拍</div>
           <em>GLOBAL TOUR</em>
-          <a class="righthide">更多>></a>
+          <router-link to="/appreciate" class="righthide">更多>></router-link>
           <p></p>
         </div>
         <ul class="cl">
           <li v-for="(item, index) in typeList" :key="index">
             <router-link :to="/details/ + item.tour_id">
-              <img :src="api + item.img_url_new[0]" />
+              <img :src="api + item.img_url[0]" />
             </router-link>
           </li>
           <!-- <li>
@@ -48,7 +48,7 @@
         <div class="Wedding-upper">
           <div class="Wedding-a">婚庆案例</div>
           <em>GLOBAL TOUR</em>
-          <a class="righthide1">更多>></a>
+          <router-link to="/inland" class="righthide1">更多>></router-link>
           <p></p>
         </div>
         <ul class="al">
@@ -157,8 +157,8 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('home/actionGetTourPhoto')
-    this.$store.dispatch('home/actionGetWedding')
+    this.$store.dispatch('home/actionGetTourThree')
+    this.$store.dispatch('home/actionGetWeddingSix')
   },
   computed: {
     typeList () {
@@ -335,7 +335,7 @@ export default {
 }
 .global li{
   float: left;
-  width: 32.6%;
+  width: 32.2%;
   margin-right: 10px;
   margin-bottom: 7px;
   &:last-child{

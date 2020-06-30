@@ -44,6 +44,7 @@ export default {
     var typeList = this.$store.state.home.typeList
     if (typeList.length <= 0) {
       this.$store.dispatch('home/actionGetTourPhoto')
+      this.changeTourPhoto()
     }
     this.changeTourPhoto()
   },
@@ -61,7 +62,7 @@ export default {
       typeList.forEach((item, index) => {
         console.log(item.tour_id, this.$route.params.id, item.id === this.$route.params.id)
         if (item.tour_id === parseInt(this.$route.params.id)) {
-          this.current = item.img_url_new
+          this.current = item.img_url
           this.title = item.tour_title
           if (index < typeList.length - 1) {
             this.next = typeList[index + 1]

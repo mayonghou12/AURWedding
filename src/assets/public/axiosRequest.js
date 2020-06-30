@@ -40,9 +40,27 @@ const getHotel = (options) => {
   })
 }
 
+const getTourThree = (options) => {
+  axiosRequest({
+    url: 'getTourThree'
+  }).then((data) => {
+    options.success(data)
+  })
+}
+
+const getWeddingSix = (options) => {
+  axiosRequest({
+    url: 'getWeddingSix'
+  }).then((data) => {
+    options.success(data)
+  })
+}
+
 export {
   getJewelry,
   getTourPhoto,
+  getTourThree,
   getWedding,
+  getWeddingSix,
   getHotel
 }

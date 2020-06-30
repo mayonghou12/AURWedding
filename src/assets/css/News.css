@@ -214,10 +214,18 @@
 .starBroker li .star-01 span img{
     width: 100%;
     height: auto;
+    transition: all .5s;
+}
+.starBroker li .star-01 span img:hover{
+    transform: scale(1.07);
 }
 .starBroker li .star-02 span img{
     width: 100%;
     height: auto;
+    transition: all .5s;
+}
+.starBroker li .star-02 span img:hover{
+    transform: scale(1.07);
 }
 .starBroker li .star-01 div{
     float: right;
