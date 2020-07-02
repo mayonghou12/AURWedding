@@ -151,7 +151,7 @@ const routes = [
     path: '/hotels',
     component: Hotels
   }, {
-    path: '/hotel',
+    path: '/hotels/:id',
     component: Hotel
   }, {
     path: '/hotel1',
@@ -217,7 +217,7 @@ const routes = [
     path: '/weddingdress',
     component: weddingdress
   }, {
-    path: '/weddingd',
+    path: '/wedding/:id',
     component: weddingd
   }, {
     path: '/weddingd1',
