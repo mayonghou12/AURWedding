@@ -15,21 +15,30 @@
             <div class="ht-c-content">
                 <!-- 左部分内容 -->
                 <div class="ht-content-left">
-                    <div class="ht-content-title">10</div>
+                    <div class="ht-content-title">{{current.hot_name}}</div>
                     <ul class="ht-content-img">
                        <li>
-                            <a >
-                                <img src="http://pic.tdy.picdns.com/52-0146/show/201709/08/180514CnAa0.jpg" alt="">
+                            <a>
+                                <img :src="api + current.img_url"/>
                             </a>
                             <div class="text">
-                                <p>这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述！这儿是文字描述</p>
+                                <p>
+                                    {{current.hot_detail}}
+                                </p>
                             </div>
                         </li>
                     </ul>
                     <div class="ht-content-skip">
-                        <div class="content-skip">
-                            <span>下一篇：<router-link to="/hotel1" class="skip">21</router-link></span>
-                        </div>
+                        <router-link class="prev" v-if="prev.hot_id" :to="'/hotels/' + prev.hot_id">上一篇：
+                        <span>
+                            {{prev.hot_name}}
+                        </span>
+                    </router-link>
+                    <router-link class="next" v-if="next.hot_id" :to="'/hotels/' + next.hot_id">下一篇：
+                        <span>
+                            {{next.hot_name}}
+                        </span>
+                    </router-link>
                     </div>
                 </div>
                 <!-- 右部分内容 -->
@@ -45,3 +54,57 @@
 <style lang="stylus" scoped>
 @import '~css/hotel.css';
 </style>
+<script>
+import { api } from 'pub/api.js'
+export default {
+  data () {
+    return {
+      current: {},
+      prev: {},
+      next: {},
+      api
+    }
+  },
+  created () {
+    var typeList = this.$store.state.hep.typeList
+    if (typeList.length <= 0) {
+      this.$store.dispatch('hep/actionGetHotelList')
+    }
+    this.changeGetHotel()
+  },
+  computed: {
+    typeList () {
+      return this.$store.state.hep.typeList
+    }
+  },
+  watch: {
+    '$store.state.hep.typeList' () {
+      this.changeGetHotel()
+    },
+    '$route' () {
+      this.changeGetHotel()
+    }
+  },
+  methods: {
+    changeGetHotel () {
+      var typeList = this.$store.state.hep.typeList
+      typeList.forEach((item, index) => {
+        // console.log(item.hot_id, this.$route.params.id, item.id === this.$route.params.id)
+        if (item.hot_id === parseInt(this.$route.params.id)) {
+          this.current = item
+          if (index < typeList.length - 1) {
+            this.next = typeList[index + 1]
+          } else {
+            this.next = {}
+          }
+          if (index > 0) {
+            this.prev = typeList[index - 1]
+          } else {
+            this.prev = {}
+          }
+        }
+      })
+    }
+  }
+}
+</script>

@@ -7,11 +7,11 @@
             <p></p>
         </div>
         <div class="Wed-dress">
-            <div v-for="(dress, index) in DressList" :key="index" class="dress">
-                <router-link :to="dress.to">
-                    <img :src="dress.img" alt="">
+            <div v-for="(item, index) in typeList" :key="index" class="dress">
+                <router-link :to="/wedding/ + item.bv_id">
+                    <img :src="api + item.img_url[0]" />
                 </router-link>
-                 <div class="dress-title">{{dress.name}}</div>
+                 <span class="dress-title">{{item.bv_title}}</span>
             </div>
             <!-- <div class="dress">
                 <router-link to="/weddingd">
@@ -44,32 +44,43 @@
 <style lang="stylus" scoped>
 @import '~css/dress.css';
 </style>
+
 <script>
+import { api } from 'pub/api.js'
 export default {
   data () {
     return {
-      DressList: [
-        {
-          to: '/weddingd',
-          img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg@308w_461h_1e_1c.jpg',
-          name: '秋冬苏妃(3)'
-        },
-        {
-          to: '/weddingd1',
-          img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104706X443H.jpg@308w_461h_1e_1c.jpg',
-          name: '秋冬苏妃(3)'
-        },
-        {
-          to: '/weddingd2',
-          img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104500k3YX8.jpg@308w_461h_1e_1c.jpg',
-          name: '秋冬苏妃(3)'
-        },
-        {
-          to: '/weddingd3',
-          img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104342G9m0z.jpg@308w_461h_1e_1c.jpg',
-          name: '秋冬苏妃(3)'
-        }
-      ]
+      api
+    //   DressList: [
+    //     {
+    //       to: '/weddingd',
+    //       img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104833NpA8l.jpg@308w_461h_1e_1c.jpg',
+    //       name: '秋冬苏妃(3)'
+    //     },
+    //     {
+    //       to: '/weddingd1',
+    //       img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104706X443H.jpg@308w_461h_1e_1c.jpg',
+    //       name: '秋冬苏妃(3)'
+    //     },
+    //     {
+    //       to: '/weddingd2',
+    //       img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104500k3YX8.jpg@308w_461h_1e_1c.jpg',
+    //       name: '秋冬苏妃(3)'
+    //     },
+    //     {
+    //       to: '/weddingd3',
+    //       img: 'http://pic.tdy.picdns.com/52-0146/show/201709/14/104342G9m0z.jpg@308w_461h_1e_1c.jpg',
+    //       name: '秋冬苏妃(3)'
+    //     }
+    //   ]
+    }
+  },
+  created () {
+    this.$store.dispatch('hep/actionGetWeddingDressList')
+  },
+  computed: {
+    typeList () {
+      return this.$store.state.hep.typeList
     }
   }
 }

@@ -56,11 +56,20 @@ const getWeddingSix = (options) => {
   })
 }
 
+const getWeddingDress = (options) => {
+  axiosRequest({
+    url: 'getDress'
+  }).then((data) => {
+    options.success(data)
+  })
+}
+
 export {
   getJewelry,
   getTourPhoto,
   getTourThree,
   getWedding,
   getWeddingSix,
-  getHotel
+  getHotel,
+  getWeddingDress
 }
