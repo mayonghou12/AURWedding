@@ -264,6 +264,11 @@ export default {
   & a.righthide{
     animation: d3 .5s;
     animation-fill-mode: forwards;
+    transition: all .5s;
+  }
+  & a.righthide:hover {
+    color: #ff0000;
+    font-size: 18px;
   }
 }
 @keyframes d3{
@@ -350,10 +355,15 @@ export default {
 /* 婚庆案例开始 */
 .Wedding {
  width:960px;
- & a.righthide1{
+  & a.righthide1{
     animation: d4 .5s;
     animation-fill-mode: forwards;
- }
+    transition: all .5s;
+  }
+  & a.righthide1:hover {
+    color: #ff0000;
+    font-size: 18px;
+  }
 }
 .Wedding-upper {
   width: 100%;

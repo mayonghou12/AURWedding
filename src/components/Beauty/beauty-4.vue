@@ -64,7 +64,7 @@
     .beauty-coursetit{
         width: 960px;
         height: 100%;
-        // background: red;
+        // background: #ffffff;
         // display: none;
         margin: 40px auto;
     }

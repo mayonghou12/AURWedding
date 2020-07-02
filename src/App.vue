@@ -23,7 +23,7 @@ export default {
 
 <style>
 body {
-  /* background: #eae8e9; */
+  background: #ffffff;
 }
 .content {
   width: 960px;
